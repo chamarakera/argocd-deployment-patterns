@@ -9,7 +9,7 @@ spec:
         repoURL: 'https://github.com/chamarakera/argocd-deployment-patterns.git'
         revision: main
         files:
-        - path: "pattern-1/configs/development/ap-southeast-2.yaml"
+        - path: "pattern-1/configs/development/ap-southeast-2.json"
   template:
     metadata:
       name: '{{ addon.name }}'
