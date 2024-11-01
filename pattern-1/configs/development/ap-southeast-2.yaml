@@ -1,5 +1,5 @@
 ---
-addon:
+- addon:
     name: metrics-server
     repoURL: https://kubernetes-sigs.github.io/metrics-server
     chart: metrics-server
@@ -7,10 +7,10 @@ addon:
     namespace: kube-system
     gitBranch: main
 
-# - addon:
-#     name: reloader
-#     repoURL: https://stakater.github.io/stakater-charts
-#     chart: stakater/reloader
-#     version: 1.0.122
-#     namespace: kube-system
-#     gitBranch: main
+- addon:
+    name: reloader
+    repoURL: https://stakater.github.io/stakater-charts
+    chart: stakater/reloader
+    version: 1.0.122
+    namespace: kube-system
+    gitBranch: main
