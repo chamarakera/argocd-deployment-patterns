@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
- name: system-ap-southeast-2
- namespace: argocd
+  name: system-ap-southeast-2
+  namespace: argocd
 spec:
   generators:
     - git:
         repoURL: 'https://github.com/chamarakera/argocd-deployment-patterns.git'
         revision: main
         files:
-        - path: "pattern-1/configs/development/ap-southeast-2.json"
+        - path: "pattern-1/configs/development/ap-southeast-2.yaml"
   template:
     metadata:
       name: '{{ addon.name }}'
