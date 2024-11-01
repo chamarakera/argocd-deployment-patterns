@@ -18,7 +18,7 @@ spec:
       # Source of the application manifests
       source:
         repoURL: '{{ addon.repoURL }}'
-        targetRevision: '{{ addon.gitBranch }}'
+        targetRevision: '{{ addon.version }}'
       
         # helm specific config
         chart: '{{ addon.chart }}'
